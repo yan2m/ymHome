@@ -38,4 +38,10 @@ public class LauncherActivity extends Activity {
             }
         },1500);
     }
+
+    @Override
+    public void finish() {
+        super.finish();
+        overridePendingTransition(android.R.anim.fade_in,android.R.anim.fade_out);
+    }
 }
