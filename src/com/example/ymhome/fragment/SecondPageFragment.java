@@ -8,24 +8,16 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.example.ymhome.R;
+import com.example.ymhome.base.BaseFragment;
 
 /**
  * A simple {@link Fragment} subclass.
  */
-public class SecondPageFragment extends Fragment {
-
-
-    public SecondPageFragment() {
-        // Required empty public constructor
-    }
-
+public class SecondPageFragment extends BaseFragment {
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_second_page, container, false);
+    public View initViews() {
+        View view = View.inflate(mActivity,R.layout.fragment_second_page,null);
+        return view;
     }
-
-
 }
